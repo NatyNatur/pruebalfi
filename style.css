@@ -20,13 +20,102 @@ background-color: #252525
     background-color: #252525;
 }
 .navOption {
-    font-size: .9rem
+    font-size: .9rem;
+    font-weight: 500;
+    color:#FFF;
 }
 
 .navIcon {
     width: 1.2rem;
 }
 
+.carouselDiv {
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    top: 40%;
+}
+
+.carouselDiv p {
+    font-weight: 300;
+    font-size: .9rem
+}
+
+.carouselText, .vidalokaFont  {
+    font-family: 'Vidaloka', serif;
+}
+
+.rubikFont {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.font-black {
+    color: #000;
+}
+
+.carouselText {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .carouselText:before, .carouselText:after {
+    background-color: #FFF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  .carouselText:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .carouselText:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  section p, .vidalokaFont {
+      color: #FFF
+  }
+
+  .orange-text {
+      color: #FF8408;
+  }
+  .section-img {
+      width: inherit
+  }
+
+  .first-section {
+      height: 36rem;
+  }
+
+  
+  .floating-div {
+    position: absolute;
+    background-color: #252525;
+    z-index: 100;
+    height: 24rem;
+}
+
+  .second-section {
+    background-image: url('img/viña@2x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32rem;
+    background-position: bottom;
+  }
+
+  .bkgr-carousel {
+      background-color: #D9D9D9;
+  }
+
+  #secondCarousel .carousel-indicators {
+      bottom: -30%;
+  }
 
 
 @media (min-width: 320px) {
@@ -35,16 +124,29 @@ background-color: #252525
         flex-direction: row;
     }
     .navOption {
-        font-size: .8rem
+        font-size: .7rem
+    }
+    .navIcon {
+        max-width: 1rem;
     }
 
     .brandName {
        max-width: 6rem;
    }
+
+   /* carouselDiv estilos mobile */
+
+   .first-section {
+    height: 28rem;
+}
 }
 
 @media (min-width: 576px) {
     .brandName {
         max-width: 10rem;
+    }
+
+    .first-section {
+        height: 36rem;
     }
 }
