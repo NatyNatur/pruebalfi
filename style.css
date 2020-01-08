@@ -10,6 +10,10 @@ background-color: #252525
     color: #FFF
 }
 
+header a.nav-link:hover, .navOption:hover  {
+    color: #FF8408;
+  }
+  
 .navbar {
     max-height: 7rem;
 }
@@ -34,6 +38,10 @@ background-color: #252525
     right: 30%;
     width: 40%;
     top: 40%;
+}
+
+#firstCarousel .carousel-indicators {
+    bottom: 25%;
 }
 
 .carouselDiv p {
@@ -61,26 +69,6 @@ background-color: #252525
     overflow: hidden;
     text-align: center;
   }
-  
-  .carouselText:before, .carouselText:after {
-    background-color: #FFF;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-  }
-  
-  .carouselText:before {
-    right: 0.5em;
-    margin-left: -50%;
-  }
-  
-  .carouselText:after {
-    left: 0.5em;
-    margin-right: -50%;
-  }
 
   section p, .vidalokaFont {
       color: #FFF
@@ -89,15 +77,19 @@ background-color: #252525
   .orange-text {
       color: #FF8408;
   }
+
+  .read-more {
+    letter-spacing: 2px;
+  }
+  .read-more:hover {
+    color: #FF8408;
+    font-weight: 500;
+    text-decoration: none;
+  }
   .section-img {
       width: inherit
   }
-
-  .first-section {
-      height: 36rem;
-  }
-
-  
+ 
   .floating-div {
     background-color: #252525;
     z-index: 100;
@@ -108,7 +100,7 @@ background-color: #252525
     background-image: url('img/viña@2x.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 32rem;
+    height: auto;
     background-position: bottom;
   }
 
@@ -116,15 +108,11 @@ background-color: #252525
       background-color: #D9D9D9;
   }
 
-  #secondCarousel .carousel-indicators {
-      bottom: -30%;
-  }
-
   .third-section {
       background-image: url('img/Imagen 2.png');
       background-repeat: no-repeat;
       background-position: top right;
-      height: 70rem;
+      height: auto;
   }
 
   .first-wine {
@@ -162,21 +150,17 @@ background-color: #252525
     box-shadow: inset 0px -110px 160px 10px rgba(0,0,0,0.78)
   }
 
-  .wine-img {
-    top: -3rem;
-    width: 8rem;
-  }
-
-  .wine-name {
-      font-size: 1.8rem
+  .m-wine-row {
+    margin-top: -3rem!important
   }
 
   .fourth-section {
     background-image: url('img/fondo2.png');
     background-repeat: no-repeat;
     background-position: bottom left;
-    height: 25rem;
-    background-size: 23% 100%;
+    height: 20rem;
+    background-size: 40% 120%;
+    margin-top: -10rem;
   }
 
 .shop-col, .tour-col {
@@ -193,15 +177,77 @@ background-color: #252525
 }
 
 .tour-col {
-    background-image: url('img/tour-1@2x.png')
+    background-image: url('img/tour-1@2x.png');
 }
 
 footer {
-    height: 25rem;
+    height: auto;
+    background-image: url(img/viña.png);
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+footer a.nav-link:hover, footer a.contact-link:hover {
+    color: #FF8408;
+    text-decoration: none;
+}
 
+.circle-social {
+    display: inline
+}
 
+.circle-social .btn-social:hover {
+    background-color: #FF8408;
+}
+
+.circle-social .btn-social {
+    border-radius: 50%;
+    background-color: #252525;
+    border: #707070;
+}
+
+.circle-social .btn-social img {
+    max-width: .9rem;
+    height: auto;
+}
+
+.textwLine:before, .textwLine:after {
+    background-color: #FFF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 2rem;
+  }
+
+  .textwLine:after {
+    left: .5rem;
+  }
+  
+  .textwLine:before {
+    right: 0.5em;
+    margin-left: -2rem;
+  }
+
+  .leftLine:before {
+    background-color: #a8a8a8;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 2rem;
+    right: 0.5em;
+    margin-left: -2rem;
+  }
+
+  #secondCarousel  .leftLine:before {
+    background-color: #000;
+    height: 1px;
+  }
+  
 
 
 @media (min-width: 320px) {
@@ -222,9 +268,31 @@ footer {
 
    /* carouselDiv estilos mobile */
 
-   .first-section {
-    height: 28rem;
-}
+    .first-section {
+        height: 30rem;
+    }
+
+    .wine-name {
+        font-size: 1.2rem
+    }
+
+    .wine-text {
+        font-size: .8rem;
+    }
+
+    .m-wine-row {
+        margin-top: 3rem!important
+      }
+
+    .wine-img {
+        top: 1rem;
+        width: 5rem;
+    }
+
+    #secondCarousel .carousel-indicators {
+        bottom: -10%;
+    }
+
 }
 
 @media (min-width: 576px) {
@@ -233,6 +301,78 @@ footer {
     }
 
     .first-section {
-        height: 36rem;
+        height: 25rem;
+    }
+
+    .wine-img {
+        top: -3rem;
+        width: 8rem;
+      }
+
+    .wine-text {
+        font-size: .9rem;
     }
 }
+
+
+
+
+@media (min-width: 768px) { 
+
+    #secondCarousel .carousel-indicators {
+        bottom: -20%;
+    }
+
+    .first-section {
+        height: auto;
+    }
+
+    .wine-name {
+        font-size: 1.8rem
+    }
+
+    .wine-text {
+        font-size: 1rem;
+    }
+
+ }
+
+ @media (min-width: 992px) { 
+    .carouselText:before, .carouselText:after {
+        background-color: #FFF;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+    
+      .carouselText:before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+      
+      .carouselText:after {
+        left: 0.5em;
+        margin-right: -50%;
+      }
+
+      .m-wine-row {
+        margin-top: -3rem!important
+      }
+
+      .fourth-section {
+        background-size: 35% 120%;
+        margin-top: -15rem;
+      }
+
+  }
+
+  @media (min-width: 1200px) { 
+    .fourth-section {
+        background-size: 20% 100%;
+        margin-top: -15rem;
+      }
+
+   }
