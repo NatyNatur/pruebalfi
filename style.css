@@ -95,7 +95,6 @@ background-color: #252525
 
   
   .floating-div {
-    position: absolute;
     background-color: #252525;
     z-index: 100;
     height: 24rem;
@@ -117,6 +116,64 @@ background-color: #252525
       bottom: -30%;
   }
 
+  .third-section {
+      background-image: url('img/Imagen 2.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+      height: 70rem;
+  }
+
+  .first-wine {
+    background-image: url('img/d2cc2ee2adb0dc311dfc8d80d52454ef@2x.png');
+    background-size: cover;
+    background-position: 88% 28%;
+    z-index: 40;
+  }
+  
+  .second-wine {
+    background-image: url('img/0b7c16068c1aaa77483197a95b8c817b@2x.png');
+    background-size: 120% 130%;
+    background-position: 50% 35%;
+    z-index:30;    
+  }
+
+  .third-wine {
+    background-image: url('img/3e2a1ebc3afbe37624d644473689777c@2x.png');
+    background-size: cover;
+    z-index: 20;
+  }
+
+  .fourth-wine {
+    background-image: url('img/50f111fcaf7264a0a4f8d5dd06ab2eb9@2x.png');
+    background-size: 135% 120%;
+    background-position: 29% 35%;
+    z-index: 10;
+  }
+
+  .first-wine, .second-wine, .third-wine, .fourth-wine {
+    height: 22rem;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset -8px -80px 80px -13px rgba(0,0,0,0.78);
+    -moz-box-shadow: inset -8px -80px 80px -13px rgba(0,0,0,0.78);
+    box-shadow: inset 0px -110px 160px 10px rgba(0,0,0,0.78)
+  }
+
+  .wine-img {
+    top: -3rem;
+    width: 8rem;
+  }
+
+  .wine-name {
+      font-size: 1.8rem
+  }
+
+  .fourth-section {
+    background-image: url('img/fondo2.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 40rem;
+    background-size: contain;
+  }
 
 @media (min-width: 320px) {
     .navbar-expand-sm .navbar-nav {
