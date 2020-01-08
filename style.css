@@ -53,6 +53,10 @@ background-color: #252525
     color: #000;
 }
 
+.font-gray {
+    color: #a8a8a8;
+}
+
 .carouselText {
     overflow: hidden;
     text-align: center;
@@ -171,9 +175,34 @@ background-color: #252525
     background-image: url('img/fondo2.png');
     background-repeat: no-repeat;
     background-position: bottom left;
-    height: 40rem;
-    background-size: contain;
+    height: 25rem;
+    background-size: 23% 100%;
   }
+
+.shop-col, .tour-col {
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
+    -moz-box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
+    box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
+}
+
+.shop-col {
+    background-image: url('img/tour@2x.png');
+}
+
+.tour-col {
+    background-image: url('img/tour-1@2x.png')
+}
+
+footer {
+    height: 25rem;
+}
+
+
+
+
 
 @media (min-width: 320px) {
     .navbar-expand-sm .navbar-nav {
