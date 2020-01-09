@@ -27,6 +27,7 @@ header a.nav-link:hover, .navOption:hover  {
     font-size: .9rem;
     font-weight: 500;
     color:#FFF;
+    cursor: pointer;
 }
 
 .navIcon {
@@ -97,7 +98,7 @@ header a.nav-link:hover, .navOption:hover  {
 }
 
   .second-section {
-    background-image: url('img/viña@2x.png');
+    background-image: url('../img/viña@2x.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -109,34 +110,34 @@ header a.nav-link:hover, .navOption:hover  {
   }
 
   .third-section {
-      background-image: url('img/Imagen 2.png');
+      background-image: url('../img/Imagen 2.png');
       background-repeat: no-repeat;
       background-position: top right;
       height: auto;
   }
 
   .first-wine {
-    background-image: url('img/d2cc2ee2adb0dc311dfc8d80d52454ef@2x.png');
+    background-image: url('../img/d2cc2ee2adb0dc311dfc8d80d52454ef@2x.png');
     background-size: cover;
     background-position: 88% 28%;
     z-index: 40;
   }
   
   .second-wine {
-    background-image: url('img/0b7c16068c1aaa77483197a95b8c817b@2x.png');
+    background-image: url('../img/0b7c16068c1aaa77483197a95b8c817b@2x.png');
     background-size: 120% 130%;
     background-position: 50% 35%;
     z-index:30;    
   }
 
   .third-wine {
-    background-image: url('img/3e2a1ebc3afbe37624d644473689777c@2x.png');
+    background-image: url('../img/3e2a1ebc3afbe37624d644473689777c@2x.png');
     background-size: cover;
     z-index: 20;
   }
 
   .fourth-wine {
-    background-image: url('img/50f111fcaf7264a0a4f8d5dd06ab2eb9@2x.png');
+    background-image: url('../img/50f111fcaf7264a0a4f8d5dd06ab2eb9@2x.png');
     background-size: 135% 120%;
     background-position: 29% 35%;
     z-index: 10;
@@ -155,7 +156,7 @@ header a.nav-link:hover, .navOption:hover  {
   }
 
   .fourth-section {
-    background-image: url('img/fondo2.png');
+    background-image: url('../img/fondo2.png');
     background-repeat: no-repeat;
     background-position: bottom left;
     height: 20rem;
@@ -173,16 +174,16 @@ header a.nav-link:hover, .navOption:hover  {
 }
 
 .shop-col {
-    background-image: url('img/tour@2x.png');
+    background-image: url('../img/tour@2x.png');
 }
 
 .tour-col {
-    background-image: url('img/tour-1@2x.png');
+    background-image: url('../img/tour-1@2x.png');
 }
 
 footer {
     height: auto;
-    background-image: url(img/viña.png);
+    background-image: url('../img/viña.png');
     background-position-y: 40%;
     background-repeat: no-repeat;
     background-size: cover;
