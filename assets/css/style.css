@@ -171,6 +171,7 @@ header a.nav-link:hover, .navOption:hover  {
     -webkit-box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
     -moz-box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
     box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
+    background-position: center;
 }
 
 .shop-col {
@@ -229,7 +230,7 @@ footer a.nav-link:hover, footer a.contact-link:hover {
   
   .textwLine:before {
     right: 0.5em;
-    margin-left: -2rem;
+    /*margin-left: -2rem;*/
   }
 
   .leftLine:before {
@@ -293,7 +294,6 @@ footer a.nav-link:hover, footer a.contact-link:hover {
     #secondCarousel .carousel-indicators {
         bottom: -10%;
     }
-
 }
 
 @media (min-width: 576px) {
@@ -335,7 +335,6 @@ footer a.nav-link:hover, footer a.contact-link:hover {
     .wine-text {
         font-size: 1rem;
     }
-
  }
 
  @media (min-width: 992px) { 

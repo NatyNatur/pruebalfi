@@ -7,7 +7,7 @@
                 'end': 'parent',
                 'fn': {
                     'right': {
-                        'start': 200,
+                        'start': 50,
                         'end': 0,
                         'unit': '%'
                     }
@@ -19,7 +19,7 @@
                 'end': 'parent',
                 'fn': {
                     'left': {
-                        'start': 200,
+                        'start': 50,
                         'end': 0,
                         'unit': '%'
                     }
@@ -31,7 +31,7 @@
                 'end': 'parent',
                 'fn': {
                     'right': {
-                        'start': 200,
+                        'start': 50,
                         'end': 0,
                         'unit': '%'
                     }
@@ -43,7 +43,7 @@
                 'end': 'parent',
                 'fn': {
                     'left': {
-                        'start': 200,
+                        'start': 50,
                         'end': 0,
                         'unit': '%'
                     }
