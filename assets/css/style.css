@@ -165,7 +165,7 @@ header a.nav-link:hover, .navOption:hover  {
   }
 
 .shop-col, .tour-col {
-    height: 25rem;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-box-shadow: inset 200px 35px 300px 56px rgba(37,37,37,1);
@@ -335,6 +335,10 @@ footer a.nav-link:hover, footer a.contact-link:hover {
     .wine-text {
         font-size: 1rem;
     }
+
+    .shop-col, .tour-col {
+        height: 20rem;
+    }
  }
 
  @media (min-width: 992px) { 
@@ -366,6 +370,10 @@ footer a.nav-link:hover, footer a.contact-link:hover {
         background-size: 35% 120%;
         margin-top: -15rem;
       }
+
+      .shop-col, .tour-col {
+        height: 25rem;
+    }
 
   }
 
