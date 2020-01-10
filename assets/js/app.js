@@ -1,7 +1,6 @@
 (function ($) {
     $(document).ready(function () {
-        $.jScrollability([
-            {
+        $.jScrollability([{
                 'selector': '.first-wine div img',
                 'start': 'parent',
                 'end': 'parent',
@@ -52,3 +51,11 @@
         ]);
     });
 })(jQuery);
+
+
+function goToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

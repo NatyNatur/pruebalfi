@@ -250,6 +250,15 @@ footer a.nav-link:hover, footer a.contact-link:hover {
     height: 1px;
   }
   
+.goTop {
+    width: 3.5rem;
+    height: 4rem;
+    background-color: #FFF;
+    padding: 1rem;
+    position: absolute;
+    right: .5rem;
+    cursor: pointer;
+}
 
 
 @media (min-width: 320px) {
@@ -268,7 +277,6 @@ footer a.nav-link:hover, footer a.contact-link:hover {
        max-width: 6rem;
    }
 
-   /* carouselDiv estilos mobile */
 
     .first-section {
         height: 30rem;
@@ -294,6 +302,10 @@ footer a.nav-link:hover, footer a.contact-link:hover {
     #secondCarousel .carousel-indicators {
         bottom: -10%;
     }
+
+    .goTop {
+        margin-top: -14rem;
+    }
 }
 
 @media (min-width: 576px) {
@@ -312,6 +324,10 @@ footer a.nav-link:hover, footer a.contact-link:hover {
 
     .wine-text {
         font-size: .9rem;
+    }
+
+    .goTop {
+        margin-top: -18rem;
     }
 }
 
@@ -339,6 +355,11 @@ footer a.nav-link:hover, footer a.contact-link:hover {
     .shop-col, .tour-col {
         height: 20rem;
     }
+
+    .goTop {
+        margin-top: -5rem;
+    }
+
  }
 
  @media (min-width: 992px) { 
