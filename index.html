@@ -8,18 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500|Vidaloka&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <title>prueba LFi</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/wow.js/css/libs/animate.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark justify-content-between">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top justify-content-between py-3">
             <a class="navbar-brand w-25" href="javascript:void()">
-                <img src="assets/img/Imagen 11@2x.png" width="150" height="auto"
-                    class="d-inline-block align-top brandName" alt="">
+                <img src="assets/img/Imagen 11@2x.png" width="150" height="auto" class="d-inline-block align-top brandName" alt="">
             </a>
             <ul class="navbar-nav w-50 mt-2 mt-lg-0 justify-content-end">
                 <li class="nav-item">
@@ -34,29 +34,29 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" type="button" data-toggle="collapse" data-target="#navbarToggleMenu"
-                        aria-controls="navbarToggleMenu" aria-expanded="true">
+                    <a class="nav-link" type="button" data-toggle="collapse" data-target="#navbarToggleMenu" aria-controls="navbarToggleMenu"
+                        aria-expanded="true">
                         <span class="navOption">MENÚ
                             <img src="assets/img/Grupo 2593.png" class="navIcon" alt="">
                         </span>
                     </a>
                 </li>
             </ul>
+            <div class="collapse text-right pr-4 pb-2" id="navbarToggleMenu">
+                <ul class="navbar-nav mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Nosotros" onclick="goTo(this)">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Reconocimientos" onclick="goTo(this)">Reconocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Vinos" onclick="goTo(this)">Vinos</a>
+                    </li>
+                </ul>
+    
+            </div>
         </nav>
-        <div class="collapse w-100 text-right pr-4 pb-2" id="navbarToggleMenu">
-            <ul class="navbar-nav mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void()">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void()">Reconocimientos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void()">Vinos</a>
-                </li>
-            </ul>
-
-        </div>
         <div id="firstCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators d-none d-lg-flex">
                 <li data-target="#firstCarousel" data-slide-to="0" class="active">
@@ -69,69 +69,60 @@
                     <span>03</span>
                 </li>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/slide.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption carouselDiv h-100">
-                        <p class="text-uppercase d-none d-md-block">Lorem ipsum dolor, sit amet</p>
-                        <h2 class="carouselText d-none d-sm-block">Lorem ipsum dolor, sit amet
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <div class="carousel-caption carouselDiv  wow bounceInDown">
+                        <p class="text-uppercase">Lorem ipsum dolor, sit amet</p>
+                        <h2 class="carouselText">Lorem ipsum dolor, sit amet
                             <br class="d-none d-lg-block"> consectetur adipisicing elit</h2>
-                        <h2 class="carouselText d-sm-none">Lorem ipsum</h2>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slide.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption carouselDiv h-100">
-                        <p class="text-uppercase d-none d-md-block">Lorem ipsum dolor, sit amet</p>
-                        <h2 class="carouselText d-none d-sm-block">Lorem ipsum dolor, sit amet
+                <div class="carousel-item h-100">
+                    <div class="carousel-caption carouselDiv">
+                        <p class="text-uppercase">Lorem ipsum dolor, sit amet</p>
+                        <h2 class="carouselText">Lorem ipsum dolor, sit amet
                             <br class="d-none d-lg-block"> consectetur adipisicing elit</h2>
-                        <h2 class="carouselText d-sm-none">Lorem ipsum</h2>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slide.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption carouselDiv h-100">
-                        <p class="text-uppercase d-none d-md-block">Lorem ipsum dolor, sit amet</p>
-                        <h2 class="carouselText d-none d-sm-block">Lorem ipsum dolor, sit amet
+                <div class="carousel-item h-100">
+                    <div class="carousel-caption carouselDiv">
+                        <p class="text-uppercase">Lorem ipsum dolor, sit amet</p>
+                        <h2 class="carouselText">Lorem ipsum dolor, sit amet
                             <br class="d-none d-lg-block"> consectetur adipisicing elit</h2>
-                        <h2 class="carouselText d-sm-none">Lorem ipsum</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-1 mx-auto d-flex justify-content-center m-wine-row">
-            <img src="assets/img/Grupo 3460.png" alt="d-block">
+        <div class="col-1 mx-auto d-flex justify-content-center mt-n5 wow bounce" data-wow-iteration="infinite" data-wow-duration="2s">
+            <a href="#Nosotros" onclick="goTo(this)" target="Nosotros"><img src="assets/img/Grupo 3460.png" alt="" class="d-block" ></a>
         </div>
     </header>
 
 
-    <section class="container first-section py-5">
+    <section class="container first-section py-5" id="Nosotros">
         <div class="row">
-            <div class="col-12 col-sm-9 col-md-7 col-lg-4 floating-div position-absolute">
+            <div class="col-12 col-sm-9 col-md-7 col-lg-4 floating-div position-absolute wow fadeInUp">
                 <h4 class="text-uppercase orange-text">viña</h4>
                 <h2 class="vidalokaFont textwLine">F. Morales</h2>
-                <p class="rubikFont">Nuestra viña recibe su nombre del Cacique Picunche Andetelmo, “Felipe Morales”,
-                    señor de las tierras que
-                    hoy albergan nuestro terroir, al pie de la Cordillera de los Andes, en el Valle de Alto Maipo. Su
-                    carácter
-                    visionario y pacifico le hizo ganar el respeto de los conquistadores españoles dando origen a una
-                    historia
-                    de apertura e intercambio que perdura hasta nuestros tiempos. Hoy, el espíritu de Andetelmo sigue
-                    vivo
+                <p class="rubikFont">Nuestra viña recibe su nombre del Cacique Picunche Andetelmo, “Felipe Morales”, señor de las tierras que
+                    hoy albergan nuestro terroir, al pie de la Cordillera de los Andes, en el Valle de Alto Maipo. Su carácter
+                    visionario y pacifico le hizo ganar el respeto de los conquistadores españoles dando origen a una historia
+                    de apertura e intercambio que perdura hasta nuestros tiempos. Hoy, el espíritu de Andetelmo sigue vivo
                     en nuestros vinos que expresan toda la nobleza y calidad de un terroir único.</p>
-                <a href="javascript:void()" class="text-uppercase orange-text read-more hvr-icon-forward">leer más <img
-                        src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt=""></a>
+                <a href="javascript:void()" class="text-uppercase orange-text read-more hvr-icon-forward">leer más
+                    <img src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt="">
+                </a>
             </div>
             <div class="d-none d-md-block col-md-3"></div>
-            <div class="d-none d-md-block col-md-9">
+            <div class="d-none d-md-block col-md-9 wow fadeInUp">
                 <img src="assets/img/73cc2cb38b6bdc5c61954804301ee3bc.png" alt="" class="section-img">
             </div>
         </div>
     </section>
 
-    <section class="container-fluid text-center second-section py-5">
-        <h2 class="vidalokaFont mb-5 textwLine">Reconocimientos</h2>
-        <div class="container">
+    <section class="container-fluid text-center second-section py-5" id="Reconocimientos">
+        <h2 class="vidalokaFont mb-5 textwLine wow fadeInUp">Reconocimientos</h2>
+        <div class="container wow fadeInUp">
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div id="secondCarousel" class="carousel slide" data-ride="carousel">
@@ -147,8 +138,7 @@
                                     <div class="col-12 col-md-5 bkgr-carousel py-3 px-5 mx-auto">
                                         <div class="row">
                                             <div class="col-4">
-                                                <img src="assets/img/Botella EP Sin cosecha-1.png" alt=""
-                                                    class="section-img p-2">
+                                                <img src="assets/img/Botella EP Sin cosecha-1.png" alt="" class="section-img p-2">
                                             </div>
                                             <div class="col-8 text-left rubikFont">
                                                 <img src="assets/img/noun_Laurel_-1.png" alt="" class="d-block pb-2">
@@ -201,8 +191,7 @@
                                     <div class="col-12 col-md-5 bkgr-carousel py-3 px-5 mx-auto">
                                         <div class="row">
                                             <div class="col-4">
-                                                <img src="assets/img/Botella EP Sin cosecha-1.png" alt=""
-                                                    class="section-img p-2">
+                                                <img src="assets/img/Botella EP Sin cosecha-1.png" alt="" class="section-img p-2">
                                             </div>
                                             <div class="col-8 text-left rubikFont">
                                                 <img src="assets/img/noun_Laurel_-1.png" alt="" class="d-block pb-2">
@@ -223,8 +212,7 @@
                                     <div class="col-12 col-md-5 bkgr-carousel py-3 px-5 mx-auto">
                                         <div class="row">
                                             <div class="col-4">
-                                                <img src="assets/img/Botella EP Sin cosecha-1.png" alt=""
-                                                    class="section-img p-2">
+                                                <img src="assets/img/Botella EP Sin cosecha-1.png" alt="" class="section-img p-2">
                                             </div>
                                             <div class="col-8 text-left rubikFont">
                                                 <img src="assets/img/noun_Laurel_-1.png" alt="" class="d-block pb-2">
@@ -263,44 +251,42 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid third-section py-5">
+    <section class="container-fluid third-section py-5" id="Vinos">
         <h2 class="vidalokaFont mb-5 text-center textwLine">Nuestros vinos</h2>
         <div class="container">
             <div class="row">
                 <div class="d-none d-md-block col-md-1 mr-5"></div>
-                <div class="col-12 col-md-8 col-lg-5 first-wine">
+                <div class="col-12 col-md-8 col-lg-5 first-wine wow slideInLeft" data-wow-duration="2s">
                     <div class="row h-100">
                         <div class="col-4 col-sm-3 col-md-3 col-lg-4">
-                            <img src="assets/img/Botella EP Sin cosecha.png" alt=""
-                                class="d-block position-absolute wine-img">
+                            <img src="assets/img/Botella EP Sin cosecha.png" alt="" class="d-block position-absolute wine-img">
                         </div>
                         <div class="col-8 align-self-center rubikFont font-weight-light px-4">
                             <p class="text-uppercase wine-name text-white">Doña Dominga</p>
-                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean
+                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                                 massa. Cum sociis natoque penatibus et magnis dis
                             </p>
-                            <a class="read-more hvr-icon-forward" href="javascript:void()"><img
-                                    src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt=""></a>
+                            <a class="read-more hvr-icon-forward" href="javascript:void()">
+                                <img src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-end m-wine-row">
-                <div class="col-12 col-md-8 col-lg-5 second-wine">
+                <div class="col-12 col-md-8 col-lg-5 second-wine wow slideInLeft" data-wow-duration="2s">
                     <div class="row h-100">
                         <div class="col-8 align-self-center rubikFont font-weight-light pl-5">
                             <p class="text-uppercase wine-name text-white">Macalais</p>
-                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean
+                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                                 massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
                             </p>
-                            <a class="read-more hvr-icon-forward" href="javascript:void()"><img
-                                    src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt=""></a>
+                            <a class="read-more hvr-icon-forward" href="javascript:void()">
+                                <img src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt="">
+                            </a>
                         </div>
                         <div class="col-4 col-sm-3 col-md-3 col-lg-4">
-                            <img src="assets/img/Botella ME sin cosecha.png" alt=""
-                                class="d-block position-absolute wine-img">
+                            <img src="assets/img/Botella ME sin cosecha.png" alt="" class="d-block position-absolute wine-img">
                         </div>
                     </div>
                 </div>
@@ -308,35 +294,34 @@
             </div>
             <div class="row m-wine-row">
                 <div class="d-none d-md-block col-md-1 mr-5"></div>
-                <div class="col-12 col-md-8 col-lg-5 third-wine">
+                <div class="col-12 col-md-8 col-lg-5 third-wine wow fadeInLeftBig" data-wow-duration="2s">
                     <div class="row h-100">
                         <div class="col-4 col-sm-3 col-md-3 col-lg-4">
-                            <img src="assets/img/Trazado 12929@2x.png" alt=""
-                                class="d-block position-absolute wine-img">
+                            <img src="assets/img/Trazado 12929@2x.png" alt="" class="d-block position-absolute wine-img">
                         </div>
                         <div class="col-8 align-self-center rubikFont font-weight-light px-4">
                             <p class="text-uppercase wine-name text-white">Kiñe</p>
-                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean
+                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                                 massa. Cum sociis natoque penatibus et magnis dis
                             </p>
-                            <a class="read-more hvr-icon-forward" href="javascript:void()"><img
-                                    src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt=""></a>
+                            <a class="read-more hvr-icon-forward" href="javascript:void()">
+                                <img src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-end m-wine-row">
-                <div class="col-12 col-md-8 col-lg-5 fourth-wine">
+                <div class="col-12 col-md-8 col-lg-5 fourth-wine wow slideInLeft" data-wow-duration="2s">
                     <div class="row h-100">
                         <div class="col-8 align-self-center rubikFont font-weight-light pl-5">
                             <p class="text-uppercase wine-name text-white">Calicanto</p>
-                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean
+                            <p class="wine-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                                 massa.
                             </p>
-                            <a class="read-more hvr-icon-forward" href="javascript:void()"><img
-                                    src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt=""></a>
+                            <a class="read-more hvr-icon-forward" href="javascript:void()">
+                                <img src="assets/img/Grupo 3718.png" class="d-inline hvr-icon" alt="">
+                            </a>
                         </div>
                         <div class="col-4 col-sm-3 col-md-3 col-lg-4">
                             <img src="assets/img/Imagen 6@2x.png" alt="" class="d-block position-absolute wine-img">
@@ -353,13 +338,12 @@
     </section>
     <section>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-12 col-md-6 shop-col d-flex align-items-center">
                     <div class="col-12 col-md-8 mx-auto">
                         <h5 class="text-uppercase font-weight-light font-gray">Visita</h5>
                         <p class="text-uppercase wine-name text-white leftLine">La tienda</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                             massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
                         </p>
                     </div>
@@ -368,8 +352,7 @@
                     <div class="col-12 col-md-8 mx-auto">
                         <h5 class="text-uppercase font-weight-light font-gray">Conoce nuestros tours</h5>
                         <p class="text-uppercase wine-name text-white leftLine">Enoturismo en Maipu</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                             massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
                         </p>
                     </div>
@@ -378,9 +361,9 @@
         </div>
     </section>
     <footer>
-        <div class="container py-5">
+        <div class="container py-3">
             <div class="row rubikFont font-weight-light">
-                <div class="col-6 col-sm-3 col-md-2">
+                <div class="col-6 col-sm-3 col-md-2 py-2">
                     <nav class="nav flex-column">
                         <a class="nav-link text-uppercase font-gray" href="javascript:void()">Identidad</a>
                         <a class="nav-link text-uppercase font-gray" href="javascript:void()">Vinos</a>
@@ -389,13 +372,13 @@
                         <a class="nav-link text-uppercase font-gray" href="javascript:void()">Terroir</a>
                     </nav>
                 </div>
-                <div class="col-6 col-sm-3 col-md-2">
+                <div class="col-6 col-sm-3 col-md-2 py-2">
                     <nav class="nav flex-column rubikFont">
                         <a class="nav-link text-uppercase font-gray" href="javascript:void()">Noticias</a>
                         <a class="nav-link text-uppercase font-gray" href="javascript:void()">Tienda</a>
                     </nav>
                 </div>
-                <div class="col-7 col-sm-5 col-md-3">
+                <div class="col-7 col-sm-5 col-md-3 py-2">
                     <p class="text-uppercase text-white mb-0">¿dónde estamos?</p>
                     <p class="font-gray">Casilla 420, Pirque
                         <br> Santiago de Chile</p>
@@ -404,46 +387,43 @@
                     <p class="text-uppercase text-white mb-0 mt-2">e-mail</p>
                     <a class="font-gray contact-link" href="mailto:contacto@principal.cl">contacto@principal.cl</a>
                 </div>
-                <div class="col-5 col-sm-6 col-md-3">
+                <div class="col-5 col-sm-6 col-md-3 py-2">
                     <p class="font-gray">
                         © 2019 Viña El Principal
                         <br> Todos los derechos reservados
                     </p>
                     <div class="circle-social">
-                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button"
-                            aria-pressed="true">
+                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button" aria-pressed="true">
                             <img src="assets/img/f.png" alt="" class="img-fluid">
                         </a>
                     </div>
                     <div class="circle-social">
-                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button"
-                            aria-pressed="true">
+                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button" aria-pressed="true">
                             <img src="assets/img/Trazado 5047.png" alt="" class="img-fluid">
                         </a>
                     </div>
                     <div class="circle-social">
-                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button"
-                            aria-pressed="true">
+                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button" aria-pressed="true">
                             <img src="assets/img/Grupo 734.png" alt="" class="img-fluid">
                         </a>
 
                     </div>
                     <div class="circle-social">
-                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button"
-                            aria-pressed="true">
+                        <a href="javascript:void()" class="btn btn-social btn-icon active" role="button" aria-pressed="true">
                             <img src="assets/img/y.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-2">
+                <div class="col-12 col-sm-6 col-md-2 py-2">
                     <img src="assets/img/Imagen 9.png" alt="tripadvisor logo" class="d-block mx-auto mb-3">
-                    <img src="assets/img/logo-wine-in-moderation@2x.png" alt="moderation logo"
-                        class="d-block section-img mx-auto">
+                    <img src="assets/img/logo-wine-in-moderation@2x.png" alt="moderation logo" class="d-block section-img mx-auto">
                 </div>
             </div>
         </div>
         <div class="goTop">
-            <a onclick="goToTop()"><img src="assets/img/Grupo 4060.png" alt="top" class="d-flex"></a>
+            <a onclick="goToTop()">
+                <img src="assets/img/Grupo 4060.png" alt="top" class="d-flex">
+            </a>
         </div>
     </footer>
 
@@ -452,17 +432,20 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous">
+        </script>
 
-    <script src="assets/js/jScrollability.min.js"></script>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="assets/js/app.js"></script>
 </body>
 

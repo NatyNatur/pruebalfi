@@ -1,5 +1,8 @@
 body {
-background-color: #252525
+background-color: #252525;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 .nav-item {
@@ -14,15 +17,24 @@ header a.nav-link:hover, .navOption:hover  {
     color: #FF8408;
   }
   
-.navbar {
+/*
+  .navbar {
     max-height: 7rem;
+}*/
+
+.navbar:hover {
+    background-color: #252525;
+    opacity: .8;
 }
 
 #navbarToggleMenu {
     position: absolute;
     z-index: 100;
     background-color: #252525;
+    top: 2.5rem;
+    right: 15%
 }
+
 .navOption {
     font-size: .9rem;
     font-weight: 500;
@@ -35,14 +47,27 @@ header a.nav-link:hover, .navOption:hover  {
 }
 
 .carouselDiv {
-    left: 30%;
-    right: 30%;
-    width: 40%;
     top: 40%;
+    bottom: auto;
+}
+
+#firstCarousel {
+    height: 100vh;
+}
+
+#firstCarousel .carousel-item {
+    background-image: url('../img/slide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #firstCarousel .carousel-indicators {
     bottom: 25%;
+}
+
+.carouselImg {
+    border: solid red 1px;
 }
 
 .carouselDiv p {
@@ -305,6 +330,10 @@ footer a.nav-link:hover, footer a.contact-link:hover {
 
     .goTop {
         margin-top: -14rem;
+    }
+
+    .shop-col, .tour-col {
+        height: 16rem;
     }
 }
 
